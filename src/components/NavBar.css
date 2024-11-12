@@ -1,0 +1,31 @@
+.NavBarWrap {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 8px;
+    background-color: #343434;
+    color: white;
+}
+
+.NavBarDrop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.NavBarWrap>div:hover {
+    color: #f84339;
+    cursor: pointer;
+}
+
+.NavBarLensWrap {
+    width: 26px;
+    height: 26px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}

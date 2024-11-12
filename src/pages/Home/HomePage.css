@@ -1,0 +1,312 @@
+.HomePageWrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.HomeBannerWrap {
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+}
+
+.HomeBannerCont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 400px;
+    padding: 100px 20px;
+}
+
+.PowerTextStyle {
+    font-size: 54px;
+    font-weight: bold;
+}
+
+.DTEXT {
+    font-size: 270px;
+    font-weight: bold;
+    color: #bf373c;
+}
+
+/* portfolio */
+
+.PortFolioWrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.PortFolioHeader {
+    display: flex;
+    justify-content: center;
+    font-size: var(--font-size-xl);
+    font-weight: bold;
+}
+
+.PortFolioImgCont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 26px;
+    gap: 120px;
+}
+
+/* companyData */
+
+.CompanyDataWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.OneCompanyHeadText {
+    font-size: var(--font-size-lg);
+    font-weight: bold;
+    padding: 12px;
+}
+
+.CompanyDataCounteWrap {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* gap: 350px; */
+    padding: 36px 8px;
+}
+
+.CompanyDataCounterCont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 28%;
+}
+
+.CounterContHeadText {
+    font-size: var(--font-size-md);
+    font-weight: 600;
+}
+
+.CounterContCountext {
+    font-size: var(--font-size-xl);
+    font-weight: 900;
+    color: #fd4238;
+}
+
+/* homwAboutSection */
+
+.HomeAboutSection {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px 0px;
+}
+
+.HomeAboutSectionWrap {
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.HomeAboutCont {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.HomeAboutHeadText {
+    font-size: 22px;
+    line-height: 25px;
+    color: #000;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.HomeAboutBigText {
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.HomeAboutDescription {
+    font-size: var(--font-size-sm);
+    line-height: 25px;
+}
+
+.HomeAboutImageCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+}
+
+.HomeAboutImageItem {
+    overflow: hidden;
+    width: 100%;
+    border-radius: 50%;
+    height: 500px;
+
+}
+
+.HomeAboutImageStyle {
+    /* background-image: url('../../images/dulscoImg.png'); */
+    background-size: cover;
+    background-position: 50%;
+}
+
+.face.face1 {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 90909;
+    border-radius: 50%;
+    border-left: 1px solid #fa6e68;
+    border-top: 1px solid #fa6e68;
+    animation: ani1 12s linear infinite;
+}
+
+.face {
+    position: absolute;
+    border: 2px solid transparent;
+}
+
+.circle {
+    transform: rotate(-105deg);
+}
+
+.circle {
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 50%;
+    width: 50%;
+    height: 2px;
+    transform-origin: left;
+}
+
+/* animations */
+
+/* Define the initial and final state of the text */
+@keyframes slideUp {
+    0% {
+        transform: translateY(100px);
+        /* Start from below the viewport */
+        opacity: 0;
+        /* Start invisible */
+    }
+
+    100% {
+        transform: translateY(0);
+        /* End at its original position */
+        opacity: 1;
+        /* Become fully visible */
+    }
+}
+
+/* Add a class for the animated text */
+.animate-slide-up {
+    animation: slideUp 0.4s ease-out forwards;
+    /* Apply the animation */
+}
+
+/* Optionally, you can add some other styles */
+.HomeBannerCont {
+    position: relative;
+    text-align: center;
+}
+
+.PowerTextStyle,
+.DTEXT {
+    opacity: 0;
+    animation-delay: 0.3s;
+    /* Delay the animation for 'DTEXT' */
+}
+
+/* Apply initial opacity to images */
+.PortFolioImgCont div {
+    opacity: 0;
+}
+
+.CompanyDataWrap {
+    opacity: 0;
+}
+
+.PortFolioImgCont div:nth-child(1) {
+    animation-delay: 0.4s;
+}
+
+.PortFolioImgCont div:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.PortFolioImgCont div:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.PortFolioImgCont div:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+
+.HomeAboutCont,
+.HomeAboutImageCont {
+    opacity: 0;
+    transform: translateX(30px);
+    /* Start slightly off-screen */
+}
+
+/* Slide-in animation when the element comes into view */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-30px);
+        /* Start from the left */
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(80px);
+        /* Start from the right */
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Apply animations when in view */
+.animate-from-left {
+    animation: slideInLeft 0.8s ease-out forwards;
+}
+
+.animate-from-right {
+    animation: slideInRight 0.8s ease-out forwards;
+}
+
+/* Optionally, for the whole section, if you want to animate everything */
+.animate-slide-in {
+    animation: slideInLeft 0.8s ease-out forwards;
+}
+
+@keyframes ani1 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(1turn);
+    }
+}
