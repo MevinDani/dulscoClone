@@ -316,7 +316,7 @@
 
 .WeDoCardImg {
     border-radius: 12px;
-    width: 95%;
+    width: 100%;
 }
 
 .WeDoCardTitle {
@@ -332,8 +332,43 @@
     opacity: 0.8;
     padding: 6px 0px;
     line-height: 22px;
+}
 
+/* sectorsWeServe */
+.sectorsWeServeWrap {
+    margin-top: 100px;
+}
 
+.sectorsHead {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    padding: 0 4%;
+}
+
+.sectorHeadText {
+    font-size: var(--font-size-xl);
+    color: black;
+    font-weight: 700;
+}
+
+.sectorHeadButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 12px;
+    color: #fd4238;
+    border: 1px solid #fd4238;
+    border-radius: 10px;
+}
+
+.sectorHeadButton:hover {
+    background-color: #fd4238;
+    color: white;
+    border: 1px solid #fd4238;
+    cursor: pointer;
 }
 
 /* animations */
@@ -413,13 +448,17 @@
     opacity: 0;
 }
 
+.WeDoCardImgCont {
+    overflow: hidden;
+}
+
 .WeDoCardImg {
     transition: transform 0.3s ease;
     /* Smooth transition for the zoom effect */
 }
 
 .WeDoCardImg:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
     /* Adjust scale factor as needed */
 }
 

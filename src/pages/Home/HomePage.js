@@ -18,6 +18,7 @@ import peopleSolutions from '../../images/pplSolutions.webp'
 import talentSolutions from '../../images/talentSolutions.webp'
 import envSolutions from '../../images/envSolutions.webp'
 import energySolutions from '../../images/energySolutions.webp'
+import SectorCarousel from '../../components/sectorCarousel/SectorCarousel';
 
 const HomePage = () => {
 
@@ -403,7 +404,7 @@ const HomePage = () => {
 
                             {/* <div className='WeDoCard'> */}
                             <div className={`WeDoCard ${pplSolutionsIsVisible ? 'animate-from-left' : ''}`} ref={pplSolRef}>
-                                <div>
+                                <div className="WeDoCardImgCont">
                                     <img className='WeDoCardImg' src={peopleSolutions} alt="" />
                                 </div>
 
@@ -419,7 +420,7 @@ const HomePage = () => {
                             </div>
 
                             <div className={`WeDoCard ${talentSolIsVisible ? 'animate-from-left' : ''}`} ref={talentSolRef}>
-                                <div>
+                                <div className="WeDoCardImgCont">
                                     <img className='WeDoCardImg' src={talentSolutions} alt="" />
                                 </div>
 
@@ -439,7 +440,7 @@ const HomePage = () => {
 
 
                             <div className={`WeDoCard ${envSolutionsIsVisible ? 'animate-from-right' : ''}`} ref={envSolRef}>
-                                <div>
+                                <div className="WeDoCardImgCont">
                                     <img className='WeDoCardImg' src={envSolutions} alt="" />
                                 </div>
 
@@ -455,7 +456,7 @@ const HomePage = () => {
                             </div>
 
                             <div className={`WeDoCard ${energySolutionsIsVisible ? 'animate-from-right' : ''}`} ref={energySolRef}>
-                                <div>
+                                <div className="WeDoCardImgCont">
                                     <img className='WeDoCardImg' src={energySolutions} alt="" />
                                 </div>
 
@@ -472,6 +473,29 @@ const HomePage = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+
+            {/* sectorsWeServe */}
+
+            <div className='sectorsWeServeWrap'>
+
+                <div className='sectorsHead'>
+
+                    <div className='sectorHeadText'>
+                        SECTORS WE SERVE
+                    </div>
+
+                    <div className='sectorHeadButton'>
+                        VIEW ALL SECTORS
+
+                        <FaArrowRightLong />
+                    </div>
+                </div>
+
+                <div style={{ marginTop: '50px' }}>
+                    <SectorCarousel />
+                </div>
+
             </div>
 
         </div >

@@ -1,0 +1,186 @@
+.AgricultureCont {
+    background-image: url('../../images/agriculture.jpg');
+    background-size: cover;
+    height: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    /* Smooth zoom transition */
+    transform: scale(1);
+    /* Initial scale */
+}
+
+.AgricultureCont:hover {
+    transform: scale(1.05);
+    /* Zoomed scale */
+}
+
+.AviationCont {
+    background-image: url('../../images/aviation.jpg');
+    background-size: cover;
+    height: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    /* Smooth zoom transition */
+    transform: scale(1);
+    /* Initial scale */
+}
+
+.AviationCont:hover {
+    transform: scale(1.05);
+    /* Zoomed scale */
+}
+
+.FacilitiesCont {
+    background-image: url('../../images/facilities.jpg');
+    background-size: cover;
+    height: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    /* Smooth zoom transition */
+    transform: scale(1);
+    /* Initial scale */
+}
+
+.FacilitiesCont:hover {
+    transform: scale(1.05);
+    /* Zoomed scale */
+}
+
+.FMCGCont {
+    background-image: url('../../images/fmcg.jpg');
+    background-size: cover;
+    height: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    /* Smooth zoom transition */
+    transform: scale(1);
+    /* Initial scale */
+}
+
+.FMCGCont:hover {
+    transform: scale(1.05);
+    /* Zoomed scale */
+}
+
+.GovtUtilCont {
+    background-image: url('../../images/govt.jpg');
+    background-size: cover;
+    height: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    /* Smooth zoom transition */
+    transform: scale(1);
+    /* Initial scale */
+}
+
+.GovtUtilCont:hover {
+    transform: scale(1.05);
+    /* Zoomed scale */
+}
+
+.HospitalityCont {
+    background-image: url('../../images/hospitality.jpg');
+    background-size: cover;
+    height: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    /* Smooth zoom transition */
+    transform: scale(1);
+    /* Initial scale */
+}
+
+.HospitalityCont:hover {
+    transform: scale(1.05);
+    /* Zoomed scale */
+}
+
+.ItTeleComCont {
+    background-image: url('../../images/itTelecom.jpg');
+    background-size: cover;
+    height: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    /* Smooth zoom transition */
+    transform: scale(1);
+    /* Initial scale */
+}
+
+.ItTeleComCont:hover {
+    transform: scale(1.05);
+    /* Zoomed scale */
+}
+
+.ManuFacturingCont {
+    background-image: url('../../images/manufacturing.jpg');
+    background-size: cover;
+    height: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    /* Smooth zoom transition */
+    transform: scale(1);
+    /* Initial scale */
+}
+
+.ManuFacturingCont:hover {
+    transform: scale(1.05);
+    /* Zoomed scale */
+}
+
+.OilGasCont {
+    background-image: url('../../images/oilGas.jpg');
+    background-size: cover;
+    height: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    /* Smooth zoom transition */
+    transform: scale(1);
+    /* Initial scale */
+}
+
+.OilGasCont:hover {
+    transform: scale(1.05);
+    /* Zoomed scale */
+}
+
+.PropDevs {
+    background-image: url('../../images/propDev.jpg');
+    background-size: cover;
+    height: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    /* Smooth zoom transition */
+    transform: scale(1);
+    /* Initial scale */
+}
+
+.PropDevs:hover {
+    transform: scale(1.05);
+    /* Zoomed scale */
+}
+
+.SectorCarouselBottomCont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 2%;
+    width: 90%;
+    position: absolute;
+    bottom: 16px;
+}
+
+.SectorCarouselText {
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+}
