@@ -1,28 +1,25 @@
 import React from 'react'
+import './CredentialStyle.css'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import Agriculture from './Agriculture';
-import Aviation from './Aviation';
-import Facilities from './Facilities';
-import Fmcg from './Fmcg';
-import Gov from './Gov';
-import Hospitality from './Hospitality';
-import ItTelecoms from './ItTelecoms';
-import ManuFacturing from './ManuFacturing';
-import OilGas from './OilGas';
-import Property from './Property';
-import './SectorCarousel.css'
+import CredOne from './CredOne';
+import CredTwo from './CredTwo';
+import CredThree from './CredThree';
+import CredFour from './CredFour';
+import CredFive from './CredFive';
+import CredSix from './CredSix';
+
 
 
 const responsive = {
     superLargeDesktop: {
         // the naming can be any, depends on you.
         breakpoint: { max: 4000, min: 3000 },
-        items: 5
+        items: 3
     },
     desktop: {
         breakpoint: { max: 3000, min: 1024 },
-        items: 4
+        items: 3
     },
     tablet: {
         breakpoint: { max: 1024, min: 464 },
@@ -54,50 +51,45 @@ const CustomRightArrow = ({ onClick }) => (
 
 
 
-const SectorCarousel = () => {
+const CredentialCarousel = () => {
     return (
         <Carousel
             responsive={responsive}
             infinite={true}
             autoPlay={true}           /* Enable autoplay */
-            autoPlaySpeed={1500}      /* Set autoplay speed (2 seconds) */
-            transitionDuration={500}
+            autoPlaySpeed={2000}      /* Set autoplay speed (2 seconds) */
+            transitionDuration={1000}
             itemClass="carousel-item-spacing"  /* Class for spacing between items */
-            customLeftArrow={<CustomLeftArrow />}
-            customRightArrow={<CustomRightArrow />}
+            arrows={false}
         >
             <div className='CarouselCard'>
-                <Agriculture />
+                <CredOne />
             </div>
+
             <div className='CarouselCard'>
-                <Aviation />
+                <CredTwo />
             </div>
+
             <div className='CarouselCard'>
-                <Facilities />
+                <CredThree />
             </div>
+
             <div className='CarouselCard'>
-                <Fmcg />
+                <CredFour />
             </div>
+
             <div className='CarouselCard'>
-                <Gov />
+                <CredFive />
             </div>
+
             <div className='CarouselCard'>
-                <Hospitality />
+                <CredSix />
             </div>
-            <div className='CarouselCard'>
-                <ItTelecoms />
-            </div>
-            <div className='CarouselCard'>
-                <ManuFacturing />
-            </div>
-            <div className='CarouselCard'>
-                <OilGas />
-            </div>
-            <div className='CarouselCard'>
-                <Property />
-            </div>
+
+
+
         </Carousel>
     )
 }
 
-export default SectorCarousel
+export default CredentialCarousel

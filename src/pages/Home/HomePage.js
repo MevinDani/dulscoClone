@@ -19,6 +19,8 @@ import talentSolutions from '../../images/talentSolutions.webp'
 import envSolutions from '../../images/envSolutions.webp'
 import energySolutions from '../../images/energySolutions.webp'
 import SectorCarousel from '../../components/sectorCarousel/SectorCarousel';
+import PledgesCarousel from '../../components/pledgesCarousel/PledgesCarousel';
+import CredentialCarousel from '../../components/credentialCarousel/CredentialCarousel';
 
 const HomePage = () => {
 
@@ -292,39 +294,6 @@ const HomePage = () => {
 
             {/* home-about-section */}
 
-            {/* <div className='HomeAboutSection'>
-
-                <div className='HomeAboutSectionWrap'>
-
-                    <div className='HomeAboutCont'>
-                        <div className='HomeAboutHeadText'>
-                            We are Dulsco Group
-                        </div>
-                        <div className='HomeAboutBigText'>
-                            COMMITTED TO <br />
-                            DELIVER
-                        </div>
-                        <div className='HomeAboutDescription'>
-                            Dulsco Group is a leader in the provision of People Solutions,
-                            Environmental Solutions, Talent Solutions and Energy Recruitment Solutions,
-                            that supports growth, bolsters commerce and creates a more sustainable way of life.
-                            What began as a simple stevedoring operation on the banks of the Arabian Sea in 1935 has
-                            today grown into a multifaceted enterprise serving public and private sectors across the
-                            Middle East and the world. The industries and organisations we partner with are many,
-                            but at Dulsco, we have a singular ambition – to power better communities
-                        </div>
-                    </div>
-
-                    <div className='HomeAboutImageCont'>
-
-                        <div className='HomeAboutImageItem'>
-                            <img className='HomeAboutImageStyle' src={dulsocImg} alt="" />
-                        </div>
-
-                    </div>
-                </div>
-            </div> */}
-
             <div className={`HomeAboutSection ${homeAboutIsVisible ? 'animate-slide-in' : ''}`} ref={homeAboutRef}>
                 <div className='HomeAboutSectionWrap'>
                     {/* HomeAboutCont - Animation from Left */}
@@ -512,6 +481,10 @@ const HomePage = () => {
 
                         <div className='EnvAndSustCont'>
 
+                            <div className='SpinnerBig'>
+
+                            </div>
+
                             <div className='SocialImpactTitleText'>
                                 ENVIRONMENT AND SUSTAINABILITY
                             </div>
@@ -535,6 +508,10 @@ const HomePage = () => {
 
                         <div className='HealthSafetCont'>
 
+                            <div className='Spinner'>
+
+                            </div>
+
                             <div className='SocialImpactTitleText'>
                                 HEALTH AND SAFETY
                             </div>
@@ -553,6 +530,10 @@ const HomePage = () => {
                         </div>
 
                         <div className='OurPeopleCont'>
+
+                            <div className='Spinner'>
+
+                            </div>
 
                             <div className='SocialImpactTitleText'>
                                 OUR PEOPLE
@@ -577,6 +558,10 @@ const HomePage = () => {
 
                     <div className='CommunityCont'>
 
+                        <div className='Spinner'>
+
+                        </div>
+
                         <div className='SocialImpactTitleText'>
                             COMMUNITY
                         </div>
@@ -597,7 +582,68 @@ const HomePage = () => {
                 </div>
             </div>
 
-        </div >
+            {/* latestNews */}
+
+            <div className='LatestNewsWrap'>
+
+                <div className='LatesNewsHeadText'>
+                    LATEST NEWS & INSIGHTS
+                </div>
+
+                <div style={{ marginTop: '50px' }}>
+                    <SectorCarousel />
+                </div>
+            </div>
+
+            {/* pledges  */}
+
+            <div className='PledgesWrap'>
+
+                <div className='PledgesHeadText'>
+                    PLEDGES
+                </div>
+
+                <div style={{ marginTop: '50px' }}>
+                    <PledgesCarousel />
+                </div>
+            </div>
+
+            {/*credentialsCarousel*/}
+
+            <div className='CredentialsWrap'>
+
+
+                <div className='CredentialsHeadText'>
+                    CREDENTIALS
+                </div>
+
+                <div style={{ marginTop: '50px' }}>
+                    <CredentialCarousel />
+                </div>
+            </div>
+
+            {/* socialmedia */}
+            <div className='sectorsWeServeWrap'>
+
+                <div className='sectorsHead'>
+
+                    <div className='sectorHeadText'>
+                        SOCIAL MEDIA
+                    </div>
+
+                    <div className='sectorHeadButton'>
+                        VIEW ALL POSTS
+
+                        <FaArrowRightLong />
+                    </div>
+                </div>
+
+                <div style={{ marginTop: '50px' }}>
+                    <SectorCarousel />
+                </div>
+
+            </div>
+        </div>
     )
 }
 

@@ -408,10 +408,22 @@
 
     margin-top: 100px;
 
-    overflow: hidden;
+    /* overflow: hidden; */
 
     background-image: url('../../images/EnvSust.jpg');
     background-size: cover;
+
+    position: relative;
+
+    transition: transform 0.5s ease;
+    /* Smooth zoom transition */
+    transform: scale(1);
+    /* Initial scale */
+}
+
+.EnvAndSustCont:hover {
+    transform: scale(1.05);
+    /* Zoom effect on hover */
 }
 
 .HealthSafetCont {
@@ -424,11 +436,25 @@
     height: 425px;
     border-radius: 50%;
 
-    overflow: hidden;
+    /* overflow: hidden; */
 
     background-image: url('../../images/HealthSafety.jpg');
     background-size: cover;
+
+    position: relative;
+
+    transition: transform 0.5s ease;
+    /* Smooth zoom transition */
+    transform: scale(1);
+    /* Initial scale */
 }
+
+.HealthSafetCont:hover {
+    transform: scale(1.05);
+    /* Zoom effect on hover */
+}
+
+
 
 .OurPeopleCont {
     display: flex;
@@ -440,12 +466,24 @@
     height: 425px;
     border-radius: 50%;
 
-    overflow: hidden;
+    /* overflow: hidden; */
 
     background-image: url('../../images/ourPeople.jpg');
     background-size: cover;
 
     margin-top: 50px;
+
+    position: relative;
+
+    transition: transform 0.5s ease;
+    /* Smooth zoom transition */
+    transform: scale(1);
+    /* Initial scale */
+}
+
+.OurPeopleCont:hover {
+    transform: scale(1.05);
+    /* Zoom effect on hover */
 }
 
 .CommunityCont {
@@ -458,12 +496,50 @@
     height: 425px;
     border-radius: 50%;
 
-    overflow: hidden;
+    /* overflow: hidden; */
 
     background-image: url('../../images/community.jpg');
     background-size: cover;
 
     margin-top: 50px;
+
+    position: relative;
+
+    transition: transform 0.5s ease;
+    /* Smooth zoom transition */
+    transform: scale(1);
+    /* Initial scale */
+}
+
+.CommunityCont:hover {
+    transform: scale(1.05);
+    /* Zoom effect on hover */
+}
+
+.Spinner {
+
+    border-radius: 50%;
+    border-right: 1px solid #3c5c68;
+    border-bottom: 1px solid #3c5c68;
+    animation: ani1 16s linear infinite;
+
+    width: 450px;
+    height: 450px;
+
+    position: absolute;
+}
+
+.SpinnerBig {
+
+    border-radius: 50%;
+    border-right: 1px solid #3c5c68;
+    border-bottom: 1px solid #3c5c68;
+    animation: ani1 16s linear infinite;
+
+    width: 480px;
+    height: 480px;
+
+    position: absolute;
 }
 
 .SocialImpactTitleText {
@@ -493,6 +569,7 @@
     border-radius: 10px;
 
     margin-top: 16px;
+    z-index: 5;
 }
 
 .SocialImpactButton:hover {
@@ -506,6 +583,52 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* latestNews */
+.LatestNewsWrap {
+    background-color: #002a3a;
+    padding: 30px 0px;
+    margin-top: 100px;
+}
+
+.LatesNewsHeadText {
+    font-size: var(--font-size-xl);
+    color: white;
+    opacity: 0.85;
+    font-weight: 600;
+    padding: 0px 4%;
+}
+
+/* pledges */
+
+.PledgesWrap {
+    background-color: white;
+    padding: 30px 0px;
+    margin-top: 30px;
+}
+
+.PledgesHeadText {
+    font-size: var(--font-size-xl);
+    color: #002a3a;
+    opacity: 0.85;
+    font-weight: 600;
+    padding: 0px 4%;
+}
+
+/* credentialsCarousel */
+
+.CredentialsWrap {
+    background-color: #002a3a;
+    padding: 30px 0px;
+    margin-top: 50px;
+}
+
+.CredentialsHeadText {
+    font-size: var(--font-size-xl);
+    color: white;
+    font-weight: 600;
+    padding: 0px 4%;
 }
 
 
@@ -603,7 +726,7 @@
 /* Slide-in animation when the element comes into view */
 @keyframes slideInLeft {
     from {
-        transform: translateX(-30px);
+        transform: translateX(-30);
         /* Start from the left */
         opacity: 0;
     }
@@ -616,7 +739,7 @@
 
 @keyframes slideInRight {
     from {
-        transform: translateX(80px);
+        transform: translateX(30px);
         /* Start from the right */
         opacity: 0;
     }

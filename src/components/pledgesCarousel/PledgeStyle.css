@@ -1,0 +1,51 @@
+.CarouselCard {
+    margin: 0px 12px;
+    border-radius: 12px;
+}
+
+/* Base styles for both arrows */
+.arrowCarousel {
+    position: absolute;
+    outline: 0;
+    border: 0;
+    border-radius: 35px;
+    /* background: rgba(0, 0, 0, 0.5); */
+    /* Default background color */
+    color: #fd4238;
+    /* Default arrow color */
+    width: 43px;
+    height: 43px;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    /* Smooth transition */
+}
+
+/* Hover effect */
+.arrowCarousel:hover {
+    background: #fd4238;
+    /* Background color on hover */
+    color: white;
+    /* Arrow color on hover */
+}
+
+/* Positioning for the left arrow */
+.leftArrowCarousel {
+    left: 10px;
+    /* Adjust for desired position */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+/* Positioning for the right arrow */
+.rightArrowCarousel {
+    right: 10px;
+    /* Adjust for desired position */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}

@@ -1,28 +1,23 @@
 import React from 'react'
+import './PledgeStyle.css'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import Agriculture from './Agriculture';
-import Aviation from './Aviation';
-import Facilities from './Facilities';
-import Fmcg from './Fmcg';
-import Gov from './Gov';
-import Hospitality from './Hospitality';
-import ItTelecoms from './ItTelecoms';
-import ManuFacturing from './ManuFacturing';
-import OilGas from './OilGas';
-import Property from './Property';
-import './SectorCarousel.css'
+import Uae from './Uae';
+import UaeTwo from './UaeTwo';
+import WasteZero from './WasteZero';
+import Aluminium from './Aluminium';
+
 
 
 const responsive = {
     superLargeDesktop: {
         // the naming can be any, depends on you.
         breakpoint: { max: 4000, min: 3000 },
-        items: 5
+        items: 3
     },
     desktop: {
         breakpoint: { max: 3000, min: 1024 },
-        items: 4
+        items: 3
     },
     tablet: {
         breakpoint: { max: 1024, min: 464 },
@@ -54,50 +49,35 @@ const CustomRightArrow = ({ onClick }) => (
 
 
 
-const SectorCarousel = () => {
+const PledgesCarousel = () => {
     return (
         <Carousel
             responsive={responsive}
             infinite={true}
             autoPlay={true}           /* Enable autoplay */
-            autoPlaySpeed={1500}      /* Set autoplay speed (2 seconds) */
+            autoPlaySpeed={2000}      /* Set autoplay speed (2 seconds) */
             transitionDuration={500}
             itemClass="carousel-item-spacing"  /* Class for spacing between items */
-            customLeftArrow={<CustomLeftArrow />}
-            customRightArrow={<CustomRightArrow />}
+            arrows={false}
         >
             <div className='CarouselCard'>
-                <Agriculture />
+                <Uae />
             </div>
+
             <div className='CarouselCard'>
-                <Aviation />
+                <UaeTwo />
             </div>
+
             <div className='CarouselCard'>
-                <Facilities />
+                <WasteZero />
             </div>
+
             <div className='CarouselCard'>
-                <Fmcg />
+                <Aluminium />
             </div>
-            <div className='CarouselCard'>
-                <Gov />
-            </div>
-            <div className='CarouselCard'>
-                <Hospitality />
-            </div>
-            <div className='CarouselCard'>
-                <ItTelecoms />
-            </div>
-            <div className='CarouselCard'>
-                <ManuFacturing />
-            </div>
-            <div className='CarouselCard'>
-                <OilGas />
-            </div>
-            <div className='CarouselCard'>
-                <Property />
-            </div>
+
         </Carousel>
     )
 }
 
-export default SectorCarousel
+export default PledgesCarousel
