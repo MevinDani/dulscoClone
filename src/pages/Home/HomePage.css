@@ -189,6 +189,153 @@
     transform-origin: left;
 }
 
+.orngArrowWrap {
+    display: inline-flex;
+    white-space: nowrap;
+    flex-wrap: wrap;
+    align-items: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 12px;
+}
+
+.orngArrowCont {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 0px;
+    color: #fd4238;
+    border: 1px solid #fd4238;
+    border-radius: 10px;
+}
+
+.orngArrowCont:hover {
+    background-color: #fd4238;
+    color: white;
+    cursor: pointer;
+}
+
+/* managingDirector */
+
+.ManagingDirectorSection {
+    margin-top: 100px;
+
+    background-color: #002a3a;
+
+    /* background: linear-gradient(to bottom,
+            white 50%,
+            #002a3a 50%); */
+}
+
+.DirectorImgCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(to bottom,
+            white 50%,
+            #002a3a 50%);
+}
+
+.DirectorImg {
+    width: 80%;
+    border-radius: 12px;
+}
+
+.WeDoContainer {
+    padding: 0 4%;
+    margin-top: 16px;
+}
+
+.WeDoWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 50px 0px;
+    border-bottom: 1px solid grey;
+    margin-bottom: 30px;
+}
+
+.WeDoText {
+    font-size: var(--font-size-xl);
+    color: white;
+    font-weight: 700;
+}
+
+.ViewPortFolioButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 12px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.ViewPortFolioButton:hover {
+    background-color: #fd4238;
+    color: white;
+    border: 1px solid #fd4238;
+    cursor: pointer;
+}
+
+.WeDoCardListWrap {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+    margin-top: 20px;
+}
+
+.WeDoCardListLeft {
+    width: 45%;
+
+}
+
+.WeDoCard {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid grey;
+    padding-bottom: 50px;
+}
+
+.WeDoCard:nth-child(2) {
+    margin-top: 50px;
+    border-bottom: none;
+}
+
+
+.WeDoCardListRight {
+    width: 45%;
+    padding-top: 120px;
+}
+
+.WeDoCardImg {
+    border-radius: 12px;
+    width: 95%;
+}
+
+.WeDoCardTitle {
+    font-size: var(--font-size-lg);
+    color: white;
+    font-weight: 500;
+    padding: 12px 0px;
+}
+
+.WeDoCardDesc {
+    font-size: var(--font-size-sm);
+    color: white;
+    opacity: 0.8;
+    padding: 6px 0px;
+    line-height: 22px;
+
+
+}
+
 /* animations */
 
 /* Define the initial and final state of the text */
@@ -258,6 +405,22 @@
     opacity: 0;
     transform: translateX(30px);
     /* Start slightly off-screen */
+}
+
+.DirectorImgCont,
+.WeDoWrap,
+.WeDoCard {
+    opacity: 0;
+}
+
+.WeDoCardImg {
+    transition: transform 0.3s ease;
+    /* Smooth transition for the zoom effect */
+}
+
+.WeDoCardImg:hover {
+    transform: scale(1.05);
+    /* Adjust scale factor as needed */
 }
 
 /* Slide-in animation when the element comes into view */
