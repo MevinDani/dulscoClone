@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import './HomePage.css'
+// import './FooterTest.css'
 import { FaArrowRightLong } from "react-icons/fa6";
 
 import waveImg from '../../images/waveImg.png'
@@ -643,6 +644,129 @@ const HomePage = () => {
                 </div>
 
             </div>
+
+            {/* footer */}
+            {/* <div className='footer_style'>
+
+                <div class="container">
+                    <div class="footer_style_top">
+                        <div class="footer_style_top_links">
+                            <h4>Quick Links</h4>
+                            <ul>
+                                <li>
+                                    <a target="" href="/"> Home</a>
+                                </li>
+                                <li>
+                                    <a target="" href="/news"> Media Centre</a>
+                                </li>
+                                <li>
+                                    <a target="" href="/about-us"> About Us</a>
+                                </li>
+                                <li>
+                                    <a target="" href="/careers/careers-main"> Careers</a>
+                                </li>
+                                <li>
+                                    <a target="" href="/what-we-do"> What We Do</a>
+                                </li>
+                                <li>
+                                    <a target="" href="/contact-us"> Contact Us</a>
+                                </li>
+                                <li>
+                                    <a target="" href="/dulsco-sectors"> Sectors</a>
+                                </li>
+                                <li>
+                                    <a target="" href="/social-impact"> Social Impact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer_style_top_location">
+                            <h4>locations</h4>
+                            <ul>
+                                <li>
+                                    <a target="" href="/contact-us">UAE</a>
+                                </li>
+                                <li>
+                                    <a target="" href="/contact-us">Abu Dhabi</a>
+                                </li>
+                                <li>
+                                    <a target="" href="/contact-us">Dubai</a>
+                                </li>
+                                <li>
+                                    <a target="" href="/contact-us">Ras Al Khaimah</a>
+                                </li>
+                                <li>
+                                    <a target="" href="/contact-us">Fujairah</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a target="" href="/contact-us">UK</a>
+                                </li>
+                                <li>
+                                    <a target="" href="/contact-us">Aberdeen</a>
+                                </li>
+                                <li>
+                                    <a target="" href="/contact-us">Edinburgh</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a target="" href="/contact-us">KSA</a>
+                                </li>
+                                <li>
+                                    <a target="" href="/contact-us">Riyadh</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer_style_top_media">
+                            <div class="inner">
+                                <a target="" href="https://parisima.com/">
+                                  
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_style_bottom">
+                        <p>© Copyright 2023. Dulsco . All Rights Reserved</p>
+                        <div class="footer_style_bottom_social">
+                            <h5>
+                                <a target="" href="/sitemap">Site Map</a>
+                            </h5>
+                            <h5>
+                                <a target="" href="/privacy-policy">Privacy Policy</a>
+                            </h5>
+                            <h4>Media:</h4>
+                            <ul>
+                                <li>
+                                    <a target="_blank" href="https://www.facebook.com/Dulsco/">
+                                        <span class="icon-facebook"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://www.instagram.com/dulsco/?hl=en">
+                                        <span class="icon-instagram"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://www.linkedin.com/company/dulsco/">
+                                        <span class="icon-linkedin"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://www.youtube.com/channel/UC7-VZsDxqXPCi_wRG4KkNUA">
+                                        <span class="icon-youtube"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://www.twitter.com/dulsco">
+                                        <span class="twitter-x"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> */}
         </div>
     )
 }
