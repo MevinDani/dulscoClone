@@ -371,6 +371,144 @@
     cursor: pointer;
 }
 
+/* socialImpact */
+.SocialImpactWrap {
+    margin-top: 100px;
+    padding: 0 4%;
+}
+
+.SocialImpactHeadText {
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+}
+
+.SocialImpactCircleCont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+
+    padding-top: 50px;
+}
+
+.SocialImpactLeft,
+.SocialImpactRight {
+    width: 45%;
+}
+
+.EnvAndSustCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+
+    margin-top: 100px;
+
+    overflow: hidden;
+
+    background-image: url('../../images/EnvSust.jpg');
+    background-size: cover;
+}
+
+.HealthSafetCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 425px;
+    height: 425px;
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    background-image: url('../../images/HealthSafety.jpg');
+    background-size: cover;
+}
+
+.OurPeopleCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 425px;
+    height: 425px;
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    background-image: url('../../images/ourPeople.jpg');
+    background-size: cover;
+
+    margin-top: 50px;
+}
+
+.CommunityCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 425px;
+    height: 425px;
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    background-image: url('../../images/community.jpg');
+    background-size: cover;
+
+    margin-top: 50px;
+}
+
+.SocialImpactTitleText {
+    font-size: var(--font-size-lg);
+    color: white;
+    font-weight: 600;
+    padding: 2px 2%;
+}
+
+.SocialImpactDescText {
+    font-size: var(--font-size-sm);
+    color: white;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 2px 4%;
+}
+
+
+.SocialImpactButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 12px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+
+    margin-top: 16px;
+}
+
+.SocialImpactButton:hover {
+    background-color: #fd4238;
+    color: white;
+    border: 1px solid #fd4238;
+    cursor: pointer;
+}
+
+.SocialImpactBottomCircle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 /* animations */
 
 /* Define the initial and final state of the text */

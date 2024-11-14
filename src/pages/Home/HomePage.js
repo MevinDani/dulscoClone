@@ -498,6 +498,105 @@ const HomePage = () => {
 
             </div>
 
+            {/* socialImpact */}
+
+            <div className='SocialImpactWrap'>
+
+                <div className='SocialImpactHeadText'>
+                    SOCIAL IMPACT
+                </div>
+
+                <div className='SocialImpactCircleCont'>
+
+                    <div className='SocialImpactLeft'>
+
+                        <div className='EnvAndSustCont'>
+
+                            <div className='SocialImpactTitleText'>
+                                ENVIRONMENT AND SUSTAINABILITY
+                            </div>
+
+                            <div className='SocialImpactDescText'>
+                                We are dedicated to supporting a sustainable future and strive to protect
+                                the environment, meet social obligations, take care of our employees,
+                                and make positive contributions to the economy and society.
+                            </div>
+
+                            <div className='SocialImpactButton'>
+                                LEARN MORE
+
+                                <FaArrowRightLong />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className='SocialImpactRight'>
+
+
+                        <div className='HealthSafetCont'>
+
+                            <div className='SocialImpactTitleText'>
+                                HEALTH AND SAFETY
+                            </div>
+
+                            <div className='SocialImpactDescText'>
+                                We prioritise the safety of our employees and everyone
+                                associated with our projects. Following all health and safety guidelines,
+                                we minimise risks to prevent mishaps.
+                            </div>
+
+                            <div className='SocialImpactButton'>
+                                LEARN MORE
+
+                                <FaArrowRightLong />
+                            </div>
+                        </div>
+
+                        <div className='OurPeopleCont'>
+
+                            <div className='SocialImpactTitleText'>
+                                OUR PEOPLE
+                            </div>
+
+                            <div className='SocialImpactDescText'>
+                                Our people are at the centre of all we do.
+                                We follow a collaborative, close-knit culture,
+                                where everyone thrives and succeeds together.
+                            </div>
+
+                            <div className='SocialImpactButton'>
+                                LEARN MORE
+
+                                <FaArrowRightLong />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='SocialImpactBottomCircle'>
+
+                    <div className='CommunityCont'>
+
+                        <div className='SocialImpactTitleText'>
+                            COMMUNITY
+                        </div>
+
+                        <div className='SocialImpactDescText'>
+                            We work with various government bodies,
+                            social organisations and corporates to create,
+                            implement and measure our social impact,
+                            making sure it reaches far and wide across communities.
+                        </div>
+
+                        <div className='SocialImpactButton'>
+                            LEARN MORE
+
+                            <FaArrowRightLong />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div >
     )
 }
