@@ -1,0 +1,100 @@
+.FooterWrap {
+    padding: 50px 4%;
+    background-color: #343434;
+
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.FooterTopCont {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.FooterQuickLinksCont,
+.FooterLocationCont {
+    width: 35%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.FooterContHeadText {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: white;
+}
+
+.FooterLinksCont,
+.FooterLocationItems {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.FooterLinksCont>div {
+    padding: 6px;
+    width: 45%;
+    font-size: 14px;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.FooterLocationItems>div {
+    padding: 6px 0px;
+    width: 33%;
+    font-size: 14px;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.FooterIconsCont {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.FooterImg1 {
+    width: 200px;
+}
+
+.FooterImg2 {
+    width: 104px;
+}
+
+.FooterBottomCont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 4px;
+}
+
+.FooterCopyText {
+    font-size: 14px;
+    color: white;
+}
+
+.FooterSocialCont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.FooterSocialCont>div {
+    color: white;
+    font-size: 14px;
+}
+
+.FooterSocialItemCont {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}

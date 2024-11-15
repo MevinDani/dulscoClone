@@ -1,0 +1,333 @@
+.AboutUsWrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.AboutUsContainer {
+    width: 100%;
+    padding: 0px 4%;
+}
+
+/* AboutUsBanner */
+
+.AboutUsBannerCont {
+    background-image: url('../../images/AboutUsBanner.jpg');
+    background-size: cover;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+
+    width: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: 50%;
+}
+
+
+.AboutUsTextBanner {
+    font-size: 65px;
+    color: white;
+    font-weight: 700;
+    margin-top: 10%;
+}
+
+.banner-mask {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    z-index: 0;
+    background-repeat: no-repeat !important;
+    background-size: 100% 100% !important;
+}
+
+.AboutNavWrap {
+    position: absolute;
+    bottom: 20%;
+    left: 8%;
+
+    z-index: 10;
+}
+
+.AboutNavCont {
+    display: flex;
+    justify-content: flex-start;
+    gap: 18px;
+}
+
+.AboutUsLink {
+    color: var(--main-color);
+}
+
+/* OurStory */
+
+.OurStoryWrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+}
+
+
+.OurStorySection {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0px 0px;
+}
+
+.OurStorySectionWrap {
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.OurStoryCont {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.OurStoryHeadText {
+    font-size: 22px;
+    line-height: 25px;
+    color: #000;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.OurStoryBigText {
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.OurStoryBigText {
+    white-space: normal;
+    /* Default behavior */
+}
+
+.OurStoryDescription {
+    font-size: var(--font-size-sm);
+    line-height: 25px;
+}
+
+.OurStoryImageCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+}
+
+.OurStoryImageItem {
+    overflow: hidden;
+    width: 100%;
+    border-radius: 50%;
+    height: 500px;
+
+}
+
+.OurStoryImageStyle {
+    /* background-image: url('../../images/dulscoImg.png'); */
+    background-size: cover;
+    background-position: 50%;
+}
+
+/* circleFeatures */
+
+.CircleFeaturesCont {
+    padding: 100px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #002a3a;
+    margin-top: 30px;
+}
+
+.CircleFeaturesList {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* gap: 20px; */
+    flex-wrap: wrap;
+}
+
+.CircleCard {
+    width: 25%;
+    /* padding: 0 15px; */
+    text-align: center;
+}
+
+.CircleIcon {
+    width: 180px;
+    height: 180px;
+    background: #f9423a;
+    display: flex;
+    margin: auto;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+
+.CircleContent {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.CircleHeadText {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
+.CircleDescText {
+    font-size: 14px;
+    color: white;
+    max-width: 90%;
+    line-height: 22px;
+}
+
+/* solutions */
+.SolutionsCont {
+    padding: 60px 0px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f6f6f6;
+    /* margin-top: 30px; */
+}
+
+.SolutionsHeadText {
+    font-size: 40px;
+    font-weight: 600;
+    color: black;
+    text-align: left;
+    width: 100%;
+    padding-left: 16px;
+    margin-bottom: 24px;
+}
+
+/* leaderShipCarousel */
+
+.leaderShipCarouselWrap {
+    padding: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #002a3a;
+    margin-top: 30px;
+}
+
+/* animations */
+
+.AboutUsTextBanner,
+.OurStoryImageCont,
+.OurStoryCont,
+.CircleFeaturesCont {
+    opacity: 0;
+    animation-delay: 0.3s;
+    /* Delay the animation for 'DTEXT' */
+}
+
+/* mediaQuery */
+
+@media (max-width:1136px) {
+    .AboutNavWrap {
+        left: 12%;
+        bottom: 20%;
+    }
+}
+
+@media (max-width:940px) {
+    .AboutNavWrap {
+        left: 12%;
+        bottom: 14%;
+    }
+}
+
+@media (max-width:916px) {
+    .CircleCard {
+        width: 45%;
+        margin-bottom: 12px;
+    }
+}
+
+@media (max-width:860px) {
+
+    .OurStorySectionWrap {
+        flex-direction: column;
+    }
+
+    .OurStoryCont {
+        width: 95%;
+    }
+
+    .OurStoryHeadText {
+        text-align: center;
+    }
+
+    .OurStoryBigText {
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .OurStoryDescription {
+        text-align: center;
+    }
+
+    .OurStoryImageCont {
+        margin-top: 16px;
+        width: 100%;
+    }
+
+    .OurStoryImageItem {
+        height: 400px;
+    }
+}
+
+@media (max-width:760px) {
+    .AboutNavWrap {
+        left: 12%;
+        bottom: 10%;
+    }
+}
+
+
+@media (max-width:560px) {
+
+    .CircleFeaturesCont {
+        opacity: 1;
+    }
+
+    .CircleCard {
+        width: 70%;
+        margin-bottom: 12px;
+    }
+
+    .AboutNavWrap {
+        left: 15%;
+        bottom: 5%;
+    }
+}
+
+@media (max-width:424px) {
+    .SolutionsHeadText {
+        font-size: 30px;
+    }
+}

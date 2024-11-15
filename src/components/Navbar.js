@@ -4,11 +4,14 @@ import { IoIosArrowDown } from "react-icons/io";
 import { IoSearchOutline } from "react-icons/io5";
 import { IoMdClose } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+
     const location = useLocation();
     const isRootPage = location.pathname === "/";
+
+    const navigate = useNavigate()
 
     const [showSearchBar, setShowSearchBar] = useState(false)
 
@@ -21,13 +24,12 @@ const Navbar = () => {
                     DULSCO
                 </div>
 
-                <div className='NavPcViewItem'
-                    style={{ color: isRootPage ? "#fd4238" : "inherit" }}
-                >
+                <div className={`NavPcViewItem ${location.pathname === "/" ? "active" : ""}`} onClick={() => navigate('/')}>
                     Home
                 </div>
 
-                <div className='NavBarDrop NavPcViewItem'>
+                <div className={`NavBarDrop NavPcViewItem ${location.pathname === "/about-us" ? "active" : ""}`}
+                    onClick={() => navigate('/about-us')}>
                     About Us
                     <div style={{
                         marginTop: '8px'
@@ -122,9 +124,15 @@ const Navbar = () => {
                     </div>
 
                     <div className='NavBarMenuItemsCont'>
-                        <div className='NavBarMenuItems'>Home</div>
+                        <div className='NavBarMenuItems' onClick={() => {
+                            navigate('/')
+                            setShowNavMenu(false)
+                        }}>Home</div>
 
-                        <div className='NavBarMenuItems'>
+                        <div className='NavBarMenuItems' onClick={() => {
+                            navigate('/about-us')
+                            setShowNavMenu(false)
+                        }}>
                             About Us<div><IoIosArrowDown /></div>
                         </div>
                         <div className='NavBarMenuItems'>What We Do<div><IoIosArrowDown /></div></div>

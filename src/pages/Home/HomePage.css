@@ -833,7 +833,7 @@
 /* Slide-in animation when the element comes into view */
 @keyframes slideInLeft {
     from {
-        transform: translateX(-30);
+        transform: translateX(-30px);
         /* Start from the left */
         opacity: 0;
     }
@@ -923,7 +923,8 @@
     }
 
     .SocialImpactLeft,
-    .SocialImpactRight {
+    .SocialImpactRight,
+    .SocialImpactBottomCircle {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -1025,7 +1026,7 @@
 
     .FooterQuickLinksCont,
     .FooterLocationCont {
-        width: 100%;
+        width: 100% !important;
     }
 
     .FooterLinksCont,
@@ -1043,14 +1044,14 @@
     }
 
     .FooterIconsCont {
-        width: 100%;
+        width: 100% !important;
         gap: 16px;
     }
 
     .FooterBottomCont {
         align-items: center;
         gap: 12px;
-        flex-direction: column-reverse;
+        flex-direction: column-reverse !important;
     }
 }
 
@@ -1110,16 +1111,16 @@
 
     .Spinner,
     .SpinnerBig {
-        width: 420px;
-        height: 420px;
+        width: 400px;
+        height: 400px;
     }
 
     .HealthSafetCont,
     .OurPeopleCont,
     .CommunityCont,
     .EnvAndSustCont {
-        width: 400px;
-        height: 400px;
+        width: 360px;
+        height: 360px;
     }
 }
 

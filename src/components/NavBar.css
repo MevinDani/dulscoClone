@@ -71,7 +71,7 @@
     flex-direction: column;
     background-color: white;
 
-    z-index: 10;
+    z-index: 20;
 }
 
 .NavBarMenu>div {
@@ -93,6 +93,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.NavPcViewItem.active {
+    color: #fd4238;
 }
 
 @media (max-width:1040px) {
