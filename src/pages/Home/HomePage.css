@@ -133,6 +133,11 @@
     margin-bottom: 10px;
 }
 
+.HomeAboutBigText {
+    white-space: normal;
+    /* Default behavior */
+}
+
 .HomeAboutDescription {
     font-size: var(--font-size-sm);
     line-height: 25px;
@@ -873,5 +878,231 @@
 
     100% {
         transform: rotate(1turn);
+    }
+}
+
+/* mediaquery */
+
+@media (max-width:1020px) {
+
+    .Spinner {
+        width: 380px;
+        height: 380px;
+    }
+
+    .HealthSafetCont,
+    .OurPeopleCont,
+    .CommunityCont {
+        width: 350px;
+        height: 350px;
+    }
+
+    .SocialImpactCircleCont {
+        gap: 64px;
+        padding-top: 0px;
+    }
+}
+
+@media (max-width:1006px) {
+    .HomeBannerCont {
+        gap: 100px;
+        padding: 80px 0px;
+    }
+
+    .PortFolioImgCont {
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 60px;
+    }
+}
+
+@media (max-width:900px) {
+    .SocialImpactCircleCont {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .SocialImpactLeft,
+    .SocialImpactRight {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Spinner {
+        width: 480px;
+        height: 480px;
+    }
+
+    .HealthSafetCont,
+    .OurPeopleCont,
+    .CommunityCont {
+        width: 450px;
+        height: 450px;
+    }
+
+}
+
+@media (max-width:860px) {
+    .HomeBannerCont {
+        display: block;
+    }
+
+    .PowerTextStyle {
+        font-size: 50px;
+    }
+
+    .DTEXT {
+        font-size: 200px;
+    }
+
+    .DuscoMaskImg {
+        width: 400px;
+    }
+
+    .HomeAboutSectionWrap {
+        flex-direction: column;
+    }
+
+    .HomeAboutCont {
+        width: 95%;
+    }
+
+    .HomeAboutHeadText {
+        text-align: center;
+    }
+
+    .HomeAboutBigText {
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .HomeAboutDescription {
+        text-align: center;
+    }
+
+    .orngArrowWrap {
+        justify-content: center;
+    }
+
+    .orngArrowCont {
+        width: 60%;
+    }
+
+    .HomeAboutImageCont {
+        margin-top: 16px;
+        width: 100%;
+    }
+
+    .HomeAboutImageItem {
+        height: 400px;
+    }
+}
+
+@media (max-width:830px) {
+    .CompanyDataCounteWrap {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .CompanyDataCounterCont {
+        gap: 18px;
+        flex-direction: row-reverse;
+        padding-left: 20%;
+    }
+
+    .OneCompanyHeadText {
+        text-align: center;
+    }
+
+    .FooterTopCont {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .FooterQuickLinksCont,
+    .FooterLocationCont {
+        width: 100%;
+    }
+
+    .FooterLinksCont,
+    .FooterLocationItems {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .FooterLinksCont>div {
+        width: 20%;
+    }
+
+    .FooterLocationItems>div {
+        width: 25%;
+    }
+
+    .FooterIconsCont {
+        width: 100%;
+        gap: 16px;
+    }
+
+    .FooterBottomCont {
+        align-items: center;
+        gap: 12px;
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width:760px) {
+    .DirectorImg {
+        width: 90%;
+
+    }
+
+    .WeDoCardListWrap {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .WeDoCardListLeft,
+    .WeDoCardListRight {
+        width: 90%;
+    }
+
+    .WeDoCardListRight {
+        padding-top: 12px;
+    }
+
+    .WeDoCard:nth-child(2) {
+        border-bottom: 1px solid grey;
+    }
+
+    .WeDoWrap {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+        padding: 20px 0px;
+    }
+
+    .sectorsHead {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+        padding: 20px 8px;
+    }
+
+    .ManagingDirectorSection,
+    .sectorsWeServeWrap,
+    .SocialImpactWrap {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width:500px) {
+
+    .FooterLocationItems>div,
+    .FooterLinksCont>div {
+        width: 30%;
     }
 }

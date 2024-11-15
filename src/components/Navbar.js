@@ -14,7 +14,7 @@ const Navbar = () => {
         <>
             <div className='NavBarWrap'>
 
-                <div className=''>
+                <div className='' style={{ paddingLeft: '12px' }}>
                     DULSCO
                 </div>
 
@@ -62,14 +62,16 @@ const Navbar = () => {
                     Contact Us
                 </div>
 
-                <div className='NavBarLensWrap NavPcViewItem' onClick={() => setShowSearchBar(!showSearchBar)}>
+                <div style={{ paddingRight: '12px' }}>
+                    <div className='NavBarLensWrap NavPcViewItem' onClick={() => setShowSearchBar(!showSearchBar)}>
 
-                    {
-                        showSearchBar ?
-                            <IoMdClose />
-                            :
-                            <IoSearchOutline />
-                    }
+                        {
+                            showSearchBar ?
+                                <IoMdClose />
+                                :
+                                <IoSearchOutline />
+                        }
+                    </div>
                 </div>
 
                 <div className='NavBarRightMobItem'>

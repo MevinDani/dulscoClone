@@ -31,6 +31,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+
 }
 
 .NavSearchBar {
@@ -103,5 +104,6 @@
         display: flex;
         gap: 46px;
         align-items: center;
+        padding-right: 12px;
     }
 }

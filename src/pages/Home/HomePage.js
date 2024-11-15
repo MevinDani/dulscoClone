@@ -53,6 +53,9 @@ const HomePage = () => {
     const [energySolutionsIsVisible, setEnergySolutionsIsVisible] = useState(false)
 
 
+    const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+
     const [clientsCount, setClientsCount] = useState(0);
     const [employeesCount, setEmployeesCount] = useState(0);
     const [experienceCount, setExperienceCount] = useState(0);
@@ -200,6 +203,17 @@ const HomePage = () => {
         }
     }, [counterInView]);
 
+    useEffect(() => {
+        const handleResize = () => {
+            setIsSmallScreen(window.innerWidth < 860);
+        };
+
+        handleResize(); // Check on initial load
+        window.addEventListener("resize", handleResize);
+
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
     return (
         <div className='HomePageWrap'>
 
@@ -263,7 +277,7 @@ const HomePage = () => {
                 </div>
 
                 <div>
-                    <img src={maskLogo} alt="" />
+                    <img className='DuscoMaskImg' src={maskLogo} alt="" />
                 </div>
 
 
@@ -310,8 +324,13 @@ const HomePage = () => {
                             We are Dulsco Group
                         </div>
                         <div className='HomeAboutBigText'>
-                            COMMITTED TO <br />
-                            DELIVER
+                            {isSmallScreen ? (
+                                "COMMITTED TO DELIVER"
+                            ) : (
+                                <>
+                                    COMMITTED TO <br /> DELIVER
+                                </>
+                            )}
                         </div>
                         <div className='HomeAboutDescription'>
                             Dulsco Group is a leader in the provision of People Solutions,
