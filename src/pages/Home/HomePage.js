@@ -1,8 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import './HomePage.css'
-// import './FooterTest.css'
+
 import { FaArrowRightLong } from "react-icons/fa6";
+import { FaFacebookF } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
 
 import waveImg from '../../images/waveImg.png'
 import portfolio1 from '../../images/portfolio1.webp'
@@ -19,6 +23,9 @@ import peopleSolutions from '../../images/pplSolutions.webp'
 import talentSolutions from '../../images/talentSolutions.webp'
 import envSolutions from '../../images/envSolutions.webp'
 import energySolutions from '../../images/energySolutions.webp'
+import footerIcon1 from '../../images/footerIcon1.webp'
+import footerIcon2 from '../../images/footerIcon2.webp'
+
 import SectorCarousel from '../../components/sectorCarousel/SectorCarousel';
 import PledgesCarousel from '../../components/pledgesCarousel/PledgesCarousel';
 import CredentialCarousel from '../../components/credentialCarousel/CredentialCarousel';
@@ -646,127 +653,87 @@ const HomePage = () => {
             </div>
 
             {/* footer */}
-            {/* <div className='footer_style'>
+            <div className='FooterWrap'>
 
-                <div class="container">
-                    <div class="footer_style_top">
-                        <div class="footer_style_top_links">
-                            <h4>Quick Links</h4>
-                            <ul>
-                                <li>
-                                    <a target="" href="/"> Home</a>
-                                </li>
-                                <li>
-                                    <a target="" href="/news"> Media Centre</a>
-                                </li>
-                                <li>
-                                    <a target="" href="/about-us"> About Us</a>
-                                </li>
-                                <li>
-                                    <a target="" href="/careers/careers-main"> Careers</a>
-                                </li>
-                                <li>
-                                    <a target="" href="/what-we-do"> What We Do</a>
-                                </li>
-                                <li>
-                                    <a target="" href="/contact-us"> Contact Us</a>
-                                </li>
-                                <li>
-                                    <a target="" href="/dulsco-sectors"> Sectors</a>
-                                </li>
-                                <li>
-                                    <a target="" href="/social-impact"> Social Impact</a>
-                                </li>
-                            </ul>
+                <div className='FooterTopCont'>
+                    <div className='FooterQuickLinksCont'>
+                        <div className='FooterContHeadText'>
+                            QUICK LINKS
                         </div>
-                        <div class="footer_style_top_location">
-                            <h4>locations</h4>
-                            <ul>
-                                <li>
-                                    <a target="" href="/contact-us">UAE</a>
-                                </li>
-                                <li>
-                                    <a target="" href="/contact-us">Abu Dhabi</a>
-                                </li>
-                                <li>
-                                    <a target="" href="/contact-us">Dubai</a>
-                                </li>
-                                <li>
-                                    <a target="" href="/contact-us">Ras Al Khaimah</a>
-                                </li>
-                                <li>
-                                    <a target="" href="/contact-us">Fujairah</a>
-                                </li>
-                            </ul>
-                            <ul>
-                                <li>
-                                    <a target="" href="/contact-us">UK</a>
-                                </li>
-                                <li>
-                                    <a target="" href="/contact-us">Aberdeen</a>
-                                </li>
-                                <li>
-                                    <a target="" href="/contact-us">Edinburgh</a>
-                                </li>
-                            </ul>
-                            <ul>
-                                <li>
-                                    <a target="" href="/contact-us">KSA</a>
-                                </li>
-                                <li>
-                                    <a target="" href="/contact-us">Riyadh</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="footer_style_top_media">
-                            <div class="inner">
-                                <a target="" href="https://parisima.com/">
-                                  
-                                </a>
-                            </div>
+
+                        <div className='FooterLinksCont'>
+
+                            <div>Home</div>
+                            <div>Media Centre</div>
+                            <div>About Us</div>
+                            <div>Careers</div>
+                            <div>What We Do</div>
+                            <div>Contact Us</div>
+                            <div>Sectors</div>
+                            <div>Social Impact</div>
                         </div>
                     </div>
-                    <div class="footer_style_bottom">
-                        <p>© Copyright 2023. Dulsco . All Rights Reserved</p>
-                        <div class="footer_style_bottom_social">
-                            <h5>
-                                <a target="" href="/sitemap">Site Map</a>
-                            </h5>
-                            <h5>
-                                <a target="" href="/privacy-policy">Privacy Policy</a>
-                            </h5>
-                            <h4>Media:</h4>
-                            <ul>
-                                <li>
-                                    <a target="_blank" href="https://www.facebook.com/Dulsco/">
-                                        <span class="icon-facebook"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a target="_blank" href="https://www.instagram.com/dulsco/?hl=en">
-                                        <span class="icon-instagram"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a target="_blank" href="https://www.linkedin.com/company/dulsco/">
-                                        <span class="icon-linkedin"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a target="_blank" href="https://www.youtube.com/channel/UC7-VZsDxqXPCi_wRG4KkNUA">
-                                        <span class="icon-youtube"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a target="_blank" href="http://www.twitter.com/dulsco">
-                                        <span class="twitter-x"></span>
-                                    </a>
-                                </li>
-                            </ul>
+
+                    <div className='FooterLocationCont'>
+                        <div className='FooterContHeadText'>
+                            LOCATIONS
+                        </div>
+
+                        <div className='FooterLocationItems'>
+                            <div>UAE</div>
+                            <div>UK</div>
+                            <div>KSA</div>
+                            <div>Careers</div>
+                            <div>Abu Dhabi</div>
+                            <div>Aberdeen</div>
+                            <div>Riyadh</div>
+                            <div>Dubai</div>
+                            <div>Edinburgh</div>
+                            <div>Ras AL Khaimah</div>
+                            <div>Fujairah</div>
+                        </div>
+                    </div>
+
+                    <div className='FooterIconsCont'>
+                        <div>
+                            <img className='FooterImg1' src={footerIcon1} alt="" />
+                        </div>
+                        <div>
+                            <img className='FooterImg2' src={footerIcon2} alt="" />
                         </div>
                     </div>
                 </div>
-            </div> */}
+
+                <div className='FooterBottomCont'>
+
+                    <div className='FooterCopyText'>© Copyright 2023. Dulsco . All Rights Reserved</div>
+
+                    <div className='FooterSocialCont'>
+                        <div>Site Map</div>
+                        <div>Privacy Policy</div>
+
+                        <div className='FooterSocialItemCont'>
+
+                            <div>
+                                MEDIA:
+                            </div>
+                            <div>
+                                <FaFacebookF />
+                            </div>
+                            <div>
+                                <FaInstagram />
+                            </div>
+                            <div>
+                                <FaLinkedin />
+                            </div>
+                            <div>
+                                <FaYoutube />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     )
 }

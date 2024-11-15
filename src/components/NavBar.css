@@ -4,10 +4,13 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 8px;
+    padding: 30px 0px;
     background-color: #343434;
     color: white;
+
+    position: relative;
 }
+
 
 .NavBarDrop {
     display: flex;
@@ -28,4 +31,77 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+}
+
+.NavSearchBar {
+    width: 100%;
+    position: absolute;
+    bottom: -40px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.NavSearchInput {
+    border: 1px solid grey;
+    background-color: white;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 4px;
+    outline: none;
+    width: 80%;
+
+    z-index: 10;
+}
+
+.NavBarRightMobItem {
+    display: none;
+}
+
+.NavBarMenu {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+
+    top: 10px;
+    padding: 50px 0px;
+
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+
+    z-index: 10;
+}
+
+.NavBarMenu>div {
+    color: black;
+}
+
+.NavBarMenuCloseCont {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px 30px;
+}
+
+.NavBarMenuItemsCont {
+    padding: 50px;
+}
+
+.NavBarMenuItems {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width:1040px) {
+    .NavPcViewItem {
+        display: none;
+    }
+
+    .NavBarRightMobItem {
+        display: flex;
+        gap: 46px;
+        align-items: center;
+    }
 }

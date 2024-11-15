@@ -6,15 +6,17 @@ import LayOut from './LayOut';
 
 const App = () => {
   return (
-    <Router>
+    <>
       <Navbar />
-      
-      <Routes>
-        <Route path="/" element={<LayOut />}>
-          <Route index element={<HomePage />} />
-        </Route>
-      </Routes>
-    </Router>
+      <Router>
+
+        <Routes>
+          <Route path="/" element={<LayOut />}>
+            <Route index element={<HomePage />} />
+          </Route>
+        </Routes>
+      </Router>
+    </>
   )
 }
 
