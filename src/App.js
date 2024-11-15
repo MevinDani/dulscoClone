@@ -7,8 +7,8 @@ import LayOut from './LayOut';
 const App = () => {
   return (
     <>
-      <Navbar />
       <Router>
+        <Navbar />
 
         <Routes>
           <Route path="/" element={<LayOut />}>

@@ -1099,6 +1099,30 @@
     }
 }
 
+@media (max-width:424px) {
+    .DuscoMaskImg {
+        width: 320px;
+    }
+
+    .SocialImpactTitleText {
+        text-align: center;
+    }
+
+    .Spinner,
+    .SpinnerBig {
+        width: 420px;
+        height: 420px;
+    }
+
+    .HealthSafetCont,
+    .OurPeopleCont,
+    .CommunityCont,
+    .EnvAndSustCont {
+        width: 400px;
+        height: 400px;
+    }
+}
+
 @media (max-width:500px) {
 
     .FooterLocationItems>div,

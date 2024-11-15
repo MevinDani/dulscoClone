@@ -4,8 +4,11 @@ import { IoIosArrowDown } from "react-icons/io";
 import { IoSearchOutline } from "react-icons/io5";
 import { IoMdClose } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
+    const location = useLocation();
+    const isRootPage = location.pathname === "/";
 
     const [showSearchBar, setShowSearchBar] = useState(false)
 
@@ -14,11 +17,13 @@ const Navbar = () => {
         <>
             <div className='NavBarWrap'>
 
-                <div className='' style={{ paddingLeft: '12px' }}>
+                <div className='' style={{ paddingLeft: '12px', color: '#fd4238' }}>
                     DULSCO
                 </div>
 
-                <div className='NavPcViewItem'>
+                <div className='NavPcViewItem'
+                    style={{ color: isRootPage ? "#fd4238" : "inherit" }}
+                >
                     Home
                 </div>
 
