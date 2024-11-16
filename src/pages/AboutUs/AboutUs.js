@@ -20,6 +20,7 @@ import { LiaGreaterThanSolid } from "react-icons/lia";
 import { FaArrowRightLong } from 'react-icons/fa6';
 import SectorCarousel from '../../components/sectorCarousel/SectorCarousel';
 import Footer from '../../components/Footer/Footer';
+import HistoryCarousel from '../../components/historyCarousel/HistoryCarousel';
 
 
 const AboutUs = () => {
@@ -204,15 +205,19 @@ const AboutUs = () => {
 
                 {/* HistoryCarousel */}
 
-                {/* leaderShipCarousel */}
-                {/* <div className='leaderShipCarouselWrap'>
+                <div className='HistoryCarouselWrap'>
 
-                    <div className='SolutionsHeadText' style={{ color: 'white' }}>EXECUTIVE LEADERSHIP</div>
-
-                    <div style={{ marginTop: '50px' }}>
-                        <SectorCarousel />
+                    <div className='HistoryHeadText'>
+                        OUR HISTORY
                     </div>
-                </div> */}
+
+                    <div style={{ marginTop: '50px' }} className='HistoryCarouselCont'>
+                        <HistoryCarousel />
+                    </div>
+                </div>
+
+                {/* leaderShipCarousel */}
+
 
                 <div className='LatestNewsWrap'>
 

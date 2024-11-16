@@ -1,0 +1,78 @@
+.HistoryItemWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.HistoryImgCont {
+    background-color: #002a3a;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+
+    margin-top: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.HistoryYearText {
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 36px;
+}
+
+.HistoryYearTextRev {
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 80px;
+}
+
+.HistoryImgContRev {
+    background-color: #002a3a;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+
+    margin-top: 36px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.HoverTextCont {
+    background-color: white;
+    padding: 20px 10px;
+    width: 400px;
+    position: absolute;
+    top: -2px;
+    left: 10px;
+    z-index: 10;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.HoverText {
+    font-size: 16px;
+    font-weight: 300;
+    color: black;
+}
+
+.HoverTextCont {
+    opacity: 0;
+    /* Initially hidden */
+    transition: opacity 0.3s ease;
+    /* Smooth fade-in effect */
+    pointer-events: none;
+    /* Prevent interaction when hidden */
+}
+
+.HistoryItemWrap:hover .HoverTextCont {
+    opacity: 1;
+    /* Show on hover */
+    pointer-events: auto;
+    /* Enable interaction */
+}

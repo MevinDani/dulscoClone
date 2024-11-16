@@ -1,0 +1,228 @@
+.ContactUsBannerCont {
+    background-image: url('../../images/contacUs.jpg');
+    background-size: cover;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+
+    width: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: 50%;
+}
+
+/* contactUsForm */
+.ContactUsFormWrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0px 10px;
+    /* gap: 36px; */
+}
+
+.ContactUsLeftCont {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.ContactUsEmailCont {
+    display: flex;
+    flex-direction: column;
+}
+
+.ContactUsJobLookCont {
+    margin-top: 20px;
+}
+
+.ContactUsEmailContHeadText {
+    font-size: 36px;
+    font-weight: 600;
+    color: black;
+}
+
+.ContactUsEmailContEmailText {
+    font-size: 16px;
+    color: black;
+}
+
+.orngArrowWrapContact {
+    white-space: nowrap;
+    flex-wrap: wrap;
+    align-items: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 12px;
+}
+
+.orngArrowContContact {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 10px;
+    color: #fd4238;
+    border: 1px solid #fd4238;
+    border-radius: 10px;
+}
+
+.orngArrowContContact:hover {
+    background-color: #fd4238;
+    color: white;
+    cursor: pointer;
+}
+
+.ContactUsRightCont {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 13px;
+    height: fit-content;
+}
+
+
+.ContactUsInputCont {
+    width: 48%;
+    height: fit-content;
+}
+
+.ContactUsInput {
+    width: 80%;
+    outline: none;
+    border: 0.2px solid grey;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.ContactUsInput select {
+    appearance: none;
+    /* Remove default arrow styling (for cross-browser consistency) */
+    background: #fff;
+    /* Adjust background if necessary */
+}
+
+.selectInp {
+    width: 92%;
+}
+
+.textBoxCont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.ContactUsMessage {
+    height: 100px;
+    width: 90%;
+    /* Set a height for the textarea */
+}
+
+.SendButton {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+/* offices */
+.OfficesWrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.OfficesHeadCont {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 12px;
+    padding: 30px 10px;
+}
+
+.OfficesHeadText {
+    font-size: 40px;
+    font-weight: 600;
+    color: black;
+}
+
+.OfficeCardWrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.OfficeCardCont {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    border-radius: 8px;
+    background-color: #f4f8f9;
+    width: 28%;
+}
+
+.OfficeCardHeadText {
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+    margin: 12px 0px;
+}
+
+.OfficeCardDetailsCont {
+    padding: 10px 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+
+
+@media (max-width:860px) {
+    .ContactUsFormWrap {
+        flex-direction: column;
+    }
+
+    .ContactUsLeftCont {
+        width: 80%;
+        margin-bottom: 16px;
+    }
+
+    .ContactUsRightCont {
+        width: 100%;
+        gap: 16px;
+    }
+
+    .ContactUsInput {
+        width: 90%;
+    }
+
+    .selectInp {
+        width: 100% !important;
+    }
+
+    .OfficeCardCont {
+        width: 50%;
+    }
+}
+
+@media (max-width:700px) {
+    .OfficeCardCont {
+        width: 80%;
+    }
+}
+
+@media (max-width:640px) {
+    .ContactUsInputCont {
+        width: 100%;
+    }
+
+    .orngArrowContContact {
+        width: 50%;
+    }
+}

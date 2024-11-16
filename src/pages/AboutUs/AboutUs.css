@@ -222,6 +222,29 @@
     margin-bottom: 24px;
 }
 
+/* HistoryCarousel */
+.HistoryCarouselWrap {
+    padding: 60px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.HistoryCarouselCont {
+    background-image: url('../../images/historyBackWave.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.HistoryHeadText {
+    font-size: 40px;
+    font-weight: 600;
+    color: black;
+    padding-left: 16px;
+}
+
+
 /* leaderShipCarousel */
 
 .leaderShipCarouselWrap {

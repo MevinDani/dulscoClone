@@ -65,7 +65,7 @@ const Navbar = () => {
                     Careers
                 </div>
 
-                <div className='NavPcViewItem'>
+                <div className={`NavPcViewItem ${location.pathname === "/contact-us" ? "active" : ""}`} onClick={() => navigate('/contact-us')}>
                     Contact Us
                 </div>
 
@@ -140,7 +140,10 @@ const Navbar = () => {
                         <div className='NavBarMenuItems'>Social Impact<div><IoIosArrowDown /></div></div>
                         <div className='NavBarMenuItems'>Media Centre</div>
                         <div className='NavBarMenuItems'>Careers</div>
-                        <div className='NavBarMenuItems'> Contact Us</div>
+                        <div className='NavBarMenuItems' onClick={() => {
+                            navigate('/contact-us')
+                            setShowNavMenu(false)
+                        }}> Contact Us</div>
                     </div>
 
                 </div>
